@@ -1,4 +1,7 @@
+import { Equipement } from './../equipement.model';
+import { EquipementService } from './../equipement.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-equipement-create',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquipementCreateComponent implements OnInit {
 
-  constructor() { }
+  equipement: Equipement = {
+    type: 'Smartphone',
+    description: 'Samsung'
+  }
+  
+  constructor(private equipementService: EquipementService,
+     private router: Router ) { }
 
   ngOnInit(): void {
+  }
+  createEquipement(): void {
+    this.equipementService.create(this.equipement).subscribe(() => {
+      this.equipementService.showMessage('Equipamento cadastrado com sucesso!')
+      this.router.navigate(['/equipements'])
+    })
+  }
+  cancel(): void{
+   this.router.navigate(['/equipements'])
   }
 
 }

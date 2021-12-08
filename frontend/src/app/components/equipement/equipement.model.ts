@@ -1,6 +1,6 @@
 export interface Equipement {
-    id?: 3,
+    id?: 1,
     type: "Smartphone",
     description: "Samsung",
-    id_employee?: 3
+    id_employee?: 1
 }
