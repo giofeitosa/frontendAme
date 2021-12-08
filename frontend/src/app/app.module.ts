@@ -12,9 +12,13 @@ import { NavComponent } from './components/template/nav/nav.component';
 
 import { MatSidenavModule} from "@angular/material/sidenav";
 import { MatCardModule} from "@angular/material/card";
+import { MatButtonModule} from "@angular/material/button";
 import { MatListModule} from "@angular/material/list";
 import { HomeComponent } from './views/home/home.component';
 import { EquipementsCrudComponent } from './views/equipements-crud/equipements-crud.component';
+import { EquipementCreateComponent } from './components/equipement/equipement-create/equipement-create.component';
+import { RedDirective } from './directives/red.directive';
+import { ForDirective } from './directives/for.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,10 @@ import { EquipementsCrudComponent } from './views/equipements-crud/equipements-c
     FooterComponent,
     NavComponent,
     HomeComponent,
-    EquipementsCrudComponent
+    EquipementsCrudComponent,
+    EquipementCreateComponent,
+    RedDirective,
+    ForDirective
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,8 @@ import { EquipementsCrudComponent } from './views/equipements-crud/equipements-c
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

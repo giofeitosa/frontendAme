@@ -1,3 +1,4 @@
+import { EquipementCreateComponent } from './components/equipement/equipement-create/equipement-create.component';
 import { EquipementsCrudComponent } from './views/equipements-crud/equipements-crud.component';
 import { HomeComponent } from './views/home/home.component';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: "equipements",
     component: EquipementsCrudComponent
+  },
+  {
+    path: "equipements/create",
+    component: EquipementCreateComponent
   }
 ];
 
