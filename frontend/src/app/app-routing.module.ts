@@ -1,3 +1,4 @@
+import { EquipementUpdateComponent } from './components/equipement/equipement-update/equipement-update.component';
 import { EquipementCreateComponent } from './components/equipement/equipement-create/equipement-create.component';
 import { EquipementsCrudComponent } from './views/equipements-crud/equipements-crud.component';
 import { HomeComponent } from './views/home/home.component';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: "equipements/create",
     component: EquipementCreateComponent
+  },
+  {
+    path: "equipements/update/:id",
+    component: EquipementUpdateComponent
   }
 ];
 

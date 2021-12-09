@@ -29,6 +29,7 @@ import { EquipementRead2Component } from './components/equipement/equipement-rea
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { EquipementUpdateComponent } from './components/equipement/equipement-update/equipement-update.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { MatSortModule } from '@angular/material/sort';
     RedDirective,
     ForDirective,
     EquipementReadComponent,
-    EquipementRead2Component
+    EquipementRead2Component,
+    EquipementUpdateComponent
   ],
   imports: [
     BrowserModule,

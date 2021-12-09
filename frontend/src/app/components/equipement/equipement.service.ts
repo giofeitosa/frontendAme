@@ -36,4 +36,8 @@ export class EquipementService {
     const url = `${this.baseUrl}/${equipement.id}`
     return this.http.put<Equipement>(url, equipement)
   }
+  delete(id: string): Observable<Equipement> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<Equipement>(url)
+  }
 }
