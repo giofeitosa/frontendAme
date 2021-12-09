@@ -2,7 +2,7 @@
   "equipements": [
     {
       "id": 1,
-      "type": "Laptop",
+      "type": "Laptop ",
       "description": "Macpro",
       "id_employee": 1
     },
@@ -17,11 +17,6 @@
       "type": "Smartphone",
       "description": "Samsung",
       "id_employee": 3
-    },
-    {
-      "type": "Veio do teste",
-      "description": "teste",
-      "id": 4
     }
   ]
 }

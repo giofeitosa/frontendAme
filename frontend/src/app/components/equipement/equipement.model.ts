@@ -1,6 +1,6 @@
 export interface Equipement {
-    id: 1,
-    type: "",
-    description: "",
-    id_employee?: undefined
+    id: number,
+    type: string,
+    description: string,
+    id_employee: number
 }
