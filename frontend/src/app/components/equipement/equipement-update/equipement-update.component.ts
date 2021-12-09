@@ -18,8 +18,8 @@ export class EquipementUpdateComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.equipementService.readById('id').subscribe(equipement => {
+    const id = +this.route.snapshot.paramMap.get('id')!;
+    this.equipementService.readById(id).subscribe(equipement => {
       this.equipement = equipement
     });
   }

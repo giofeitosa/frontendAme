@@ -4,6 +4,7 @@ import { EquipementsCrudComponent } from './views/equipements-crud/equipements-c
 import { HomeComponent } from './views/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EquipementDeleteComponent } from './components/equipement/equipement-delete/equipement-delete.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: "equipements/update/:id",
     component: EquipementUpdateComponent
+  },
+  {
+    path: "equipements/delete/:id",
+    component: EquipementDeleteComponent 
   }
 ];
 

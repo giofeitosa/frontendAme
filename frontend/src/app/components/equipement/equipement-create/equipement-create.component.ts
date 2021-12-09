@@ -10,11 +10,7 @@ import { Router } from '@angular/router';
 })
 export class EquipementCreateComponent implements OnInit {
 
-  equipement: Equipement = {
-    id:undefined,
-    type: '',
-    description: ''
-  }
+  equipement: Equipement 
   
   constructor(private equipementService: EquipementService,
      private router: Router ) { }

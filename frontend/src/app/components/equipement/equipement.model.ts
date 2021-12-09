@@ -1,5 +1,5 @@
 export interface Equipement {
-    id?: 1,
+    id: 1,
     type: "",
     description: "",
     id_employee?: undefined

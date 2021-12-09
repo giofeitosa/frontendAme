@@ -30,6 +30,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { EquipementUpdateComponent } from './components/equipement/equipement-update/equipement-update.component';
+import { EquipementDeleteComponent } from './components/equipement/equipement-delete/equipement-delete.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { EquipementUpdateComponent } from './components/equipement/equipement-up
     ForDirective,
     EquipementReadComponent,
     EquipementRead2Component,
-    EquipementUpdateComponent
+    EquipementUpdateComponent,
+    EquipementDeleteComponent
   ],
   imports: [
     BrowserModule,

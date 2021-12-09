@@ -15,11 +15,12 @@ export class EquipementService {
   baseUrl = "http://localhost:3001/equipements"
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
-  showMessage(msg: string): void{
+  showMessage(msg: string, isError: boolean = false): void{
     this.snackBar.open(msg, 'x', {
       duration: 3000,
       horizontalPosition: "right",
-      verticalPosition: "top"
+      verticalPosition: "top",
+      panelClass: isError? ['msg-error'] : ['msg-success']
     })
   }
   create(equipement: Equipement): Observable<Equipement>{
@@ -28,7 +29,7 @@ export class EquipementService {
   read(): Observable<Equipement[]> {
     return this.http.get<Equipement[]>(this.baseUrl)
   }
-  readById(id: string): Observable<Equipement> {
+  readById(id: number): Observable<Equipement> {
     const url = `${this.baseUrl}/${id}`
     return this.http.get<Equipement>(url)
   }
@@ -36,7 +37,7 @@ export class EquipementService {
     const url = `${this.baseUrl}/${equipement.id}`
     return this.http.put<Equipement>(url, equipement)
   }
-  delete(id: string): Observable<Equipement> {
+  delete(id: number): Observable<Equipement> {
     const url = `${this.baseUrl}/${id}`
     return this.http.delete<Equipement>(url)
   }
