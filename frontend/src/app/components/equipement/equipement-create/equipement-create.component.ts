@@ -11,8 +11,9 @@ import { Router } from '@angular/router';
 export class EquipementCreateComponent implements OnInit {
 
   equipement: Equipement = {
-    type: 'Smartphone',
-    description: 'Samsung'
+    id:undefined,
+    type: '',
+    description: ''
   }
   
   constructor(private equipementService: EquipementService,

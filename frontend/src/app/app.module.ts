@@ -24,6 +24,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { EquipementReadComponent } from './components/equipement/equipement-read/equipement-read.component';
+import { EquipementRead2Component } from './components/equipement/equipement-read2/equipement-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,9 @@ import { MatInputModule } from '@angular/material/input';
     EquipementsCrudComponent,
     EquipementCreateComponent,
     RedDirective,
-    ForDirective
+    ForDirective,
+    EquipementReadComponent,
+    EquipementRead2Component
   ],
   imports: [
     BrowserModule,
@@ -50,7 +57,10 @@ import { MatInputModule } from '@angular/material/input';
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
